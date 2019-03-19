@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0 ;
+            padding:0;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .header{
+            height: 60px;
+            width: 100%;
+            box-shadow: 0px 10px 5px 0px rgba(0, 0, 0, 0.5);
+            padding: 5px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            box-sizing: border-box;
+            position: fixed;
+            background: white;
+            z-index: 3;
+        }
+        .logo{
+            font-style: italic;
+            text-transform: lowercase;
+        }
+        .buscador{
+            width: 50%;
+            padding: 5px;
+        }
+
+        .buscador input{
+            width: 100%;
+            padding: 2px 10px;
+            border-radius: 10px;
+            border: 1px solid;
+        }
+
+        .profile{
+            display: flex;
+            align-items: center;
+        }
+
+        .profile img{
+            width: 40px;
+            border-radius: 50%;
+            margin: 10px;
+        }
+
+        @media screen and (max-width:768px){
+            
+            .buscador{
+                width: 60%;
+            }
+            .profile span{
+                display: none;
+            }
+        }
+    </style>
+    <style>
+        .options{
+            width: 70px;
+            height: 100%;
+            background: #EE7520;
+            position: fixed;
+            left: 0;
+            top:60px;
+            text-align: center;
+            padding-top: 20px;
+            font-size: 12;
+        }
+        .option{
+            margin: 10px 0;
+        }
+
+        .option img{
+            width: 40%;
+        }
+    </style>
+    <style>
+        .contenido{
+            width: 100%;
+            overflow: hidden;
+            box-sizing: border-box;
+            padding-left: 75px;
+            padding-top: 80px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill,250px);
+            grid-gap: 30px;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+
+        .peli{
+            
+        }
+
+        .peli .peli_image img{
+            width: 100%;
+            border-radius: 5px;
+        }
+        .peli_description{
+            margin: auto;
+            width: 95%;
+            background: #ccc;
+            box-sizing: border-box;
+            padding: 10px;
+            border:solid 5px white;
+            border-radius: 10px;
+            margin-top: -30px;
+            /* z-index: 2; */
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <h3>Movie.es</h3>
+        </div>
+        <div class="buscador">
+            <input type="text" name="" id="" placeholder="Busca tu peli, actor, actriz o director favorito">
+        </div>
+        <div class="profile">
+            <span><strong>Bambi Rodriguez</strong></span>
+            <img src="walter.png" alt="" class="profilePicture">
+        </div>
+    </header>
+    <div class="options">
+        <div class="option">
+            <div class="icon"><img src="home.svg" alt=""></div>
+            <p><em>Home</em></p>
+        </div>
+        <div class="option">
+            <div class="icon"><img src="tendencia.png" alt=""></div>
+            <p><em>Trending</em></p>
+        </div>
+        <div class="option">
+            <div class="icon"><img src="like.png" alt=""></div>
+            <p><em>Más Likes</em></p>
+        </div>
+    </div>
+    <div class="contenido">
+        <div class="peli">
+            <div class="peli_image"><img src="walter.png" alt=""></div>
+            <div class="peli_description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum asperiores quos pariatur molestias aperiam enim, necessitatibus debitis dignissimos consequunt
+            </div>
+        </div>
+        <div class="peli">
+            <div class="peli_image"><img src="walter.png" alt=""></div>
+            <div class="peli_description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum asperiores quos pariatur molestias aperiam enim, necessitatibus debitis dignissimos consequunt
+            </div>
+        </div>
+        <div class="peli">
+            <div class="peli_image"><img src="walter.png" alt=""></div>
+            <div class="peli_description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum asperiores quos pariatur molestias aperiam enim, necessitatibus debitis dignissimos consequunt
+            </div>
+        </div>
+        <div class="peli">
+            <div class="peli_image"><img src="walter.png" alt=""></div>
+            <div class="peli_description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum asperiores quos pariatur molestias aperiam enim, necessitatibus debitis dignissimos consequunt
+            </div>
+        </div>
+        <div class="peli">
+            <div class="peli_image"><img src="walter.png" alt=""></div>
+            <div class="peli_description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum asperiores quos pariatur molestias aperiam enim, necessitatibus debitis dignissimos consequunt
+            </div>
+        </div>
+        <div class="peli">
+            <div class="peli_image"><img src="walter.png" alt=""></div>
+            <div class="peli_description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum asperiores quos pariatur molestias aperiam enim, necessitatibus debitis dignissimos consequunt
+            </div>
+        </div>
+        <div class="peli">
+            <div class="peli_image"><img src="walter.png" alt=""></div>
+            <div class="peli_description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum asperiores quos pariatur molestias aperiam enim, necessitatibus debitis dignissimos consequunt
+            </div>
+        </div>
+        <div class="peli">
+            <div class="peli_image"><img src="walter.png" alt=""></div>
+            <div class="peli_description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum asperiores quos pariatur molestias aperiam enim, necessitatibus debitis dignissimos consequunt
+            </div>
+        </div>
+        <div class="peli">
+            <div class="peli_image"><img src="walter.png" alt=""></div>
+            <div class="peli_description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum asperiores quos pariatur molestias aperiam enim, necessitatibus debitis dignissimos consequunt
+            </div>
+        </div>
+        <div class="peli">
+            <div class="peli_image"><img src="walter.png" alt=""></div>
+            <div class="peli_description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum asperiores quos pariatur molestias aperiam enim, necessitatibus debitis dignissimos consequunt
+            </div>
+        </div>
+        <div class="peli">
+            <div class="peli_image"><img src="walter.png" alt=""></div>
+            <div class="peli_description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum asperiores quos pariatur molestias aperiam enim, necessitatibus debitis dignissimos consequunt
+            </div>
+        </div>
+    </div>
+</body>
+</html>
